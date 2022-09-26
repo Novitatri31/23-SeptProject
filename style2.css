@@ -1,0 +1,476 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Archivo', sans-serif;
+    font-family: 'Oswald', sans-serif;
+}
+.navbar {
+    display: flex;
+}
+.navbar > ul {
+    display: flex;
+}
+.navbar > ul > li {
+    list-style-type: none;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+}
+.navbar ul li a:hover {
+    color: red;
+    cursor: pointer;
+}
+p a {
+    text-decoration: none;
+    color: black;
+}
+p a:hover {
+    color: red;
+}
+
+/* navbar head and main */
+.head {
+    height: 7vw;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.head ul:last-child {
+    width: 25vw;
+}
+.head ul li {
+    margin: 4%;
+}
+.head ul:last-child li:first-child a:first-child {
+    color: blue;
+}
+.head ul:last-child li:first-child a:first-child:hover {
+    color: red;
+}
+/* navbar main */
+.main ul li{
+    margin: 2em;
+    font-weight: bold;
+}
+.main ul li:first-child a:first-child{
+    color: red;
+}
+.main ul li:first-child a:first-child:hover{
+    color: blue;
+}
+/* General section style */
+.part{
+    display: grid;
+    margin-bottom: 4em;
+}
+.part article {
+    width: 60%;
+    justify-self: center;
+    margin: 3em;
+}
+article > h2 {
+    margin-bottom: 0.5em;
+}
+.part p {
+    margin-top: 1.5em;
+}
+/* each section */
+.one{
+    justify-items: center;
+    align-items: center;
+}
+.one h2 a {
+    text-decoration: none;
+}
+.one h2 a:hover {
+    color: red;
+}
+.one figure {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.imgcenter {
+    position: absolute;
+    color: white;
+    font-size: 25px;
+}
+/* section two */
+.two {
+    justify-items: end;
+    grid-template-areas: 
+    'aside content'
+    'article article'
+    ;
+}
+.two figure:first-child {
+    grid-area: aside;
+    display: flex;
+    align-items: center;
+    left: 7vw;
+    position: relative;
+    
+}
+.two figure:first-child img{
+    width: 40vw;
+    height: 35vh;
+}
+.two aside {
+    grid-area: content;
+    background-color: #fbffa7;
+    width: 50vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.two aside img {
+    width: 25vw;
+    height: 25vh;
+}
+.implicit {
+    grid-area: article;
+}
+/* section three */
+.three {
+    justify-items: center
+}
+iframe {
+    width: 80vw;
+    height: 60vh;
+}
+
+/* section four */
+.four {
+    justify-items: start;
+    grid-template-areas: 
+    'aside content'
+    'article article'
+    ;
+}
+.four aside {
+    grid-area: aside;
+    background-color: #b6ffc0;
+    width: 50vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.four aside img {
+    margin: 3em;
+    width: 25vw;
+    height: 25vh;
+    box-sizing: border-box;
+}
+.four figure {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 9vw;
+}
+.four figure img {
+    width: 30vw;
+    height: 40vh;
+}
+.four article{
+    grid-area: article;
+}
+/* section five */
+.five {
+    justify-items: center;
+}
+/* section six */
+.six {
+    justify-items: center;
+
+}
+.six figure {
+    width: 70vw;
+    height: 70vh;
+    background-color: #d5b3ff;
+    display: grid;
+    grid-template-areas: 
+    'aside content';
+    align-items: center;
+}
+.six figure img:first-child{
+    margin-left: 2em;
+    width: 35vw;
+    height: 35vh;
+    position: relative;
+    right: 15vw
+}
+.six figure img:last-child{
+    margin-left: 3em;
+    width: 40vw;
+    height: 50vh;
+}
+/* section seven */
+.seven{
+    justify-content: center;
+    display: flex;
+}
+.seven figure img {
+    width: 50vw;
+    height: 50vh;
+}
+.seven aside {
+    background-color: #b1c5ff;
+    width: 50vw;
+    height: 50vh;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+.seven aside h3, aside p{
+    width: 60%;
+}
+.seven aside p a{
+    color: blue;
+}
+.seven aside p a:hover{
+    color: red;
+}
+/* footer */
+.foothead {
+    margin-left: 11.5vw;
+    margin-bottom: 3vh;
+}
+.footart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.footart article {
+    width: 25vw;
+    margin-bottom: 10vh;
+}
+.fa-square-facebook{
+    color: #435B97;
+}
+.fa-square-twitter{
+    color: #45AAE7;
+}
+.fa-youtube{
+    color: #D01A20;
+}
+.fa-square-instagram{
+    color: #FF8916;
+}
+button {
+    background-color: blue;
+    color:white;
+    width: 8vw;
+    height: 4vh;
+    border: 0px;
+}
+button:hover {
+    cursor: pointer;
+}
+input {
+    margin-top: 1vh;
+    width: 17vw;
+    height: 4vh;
+    background-color: #EDEFF1;
+    border: 0px;
+}
+/* footbar */
+.footer {
+    font-size: smaller;
+    justify-content: space-around;
+    box-sizing: border-box;
+    margin-left: 7vw;
+}
+.footer ul:first-child{
+    width: 60vw;
+}
+.footer ul:last-child{
+    width: 12vw;
+}
+.footer ul:first-child li {
+    margin-right: 20px;
+}
+select{
+    border: 0px;
+}
+#language{
+    background-color: #EDEFF1;
+    width: 8vw;
+    height: 4vh;
+}
+#location {
+    background-color: #EDEFF1;
+    width: 15vw;
+    height: 4vh;
+}
+/* responsivr design */
+@media (min-width: 992px) {
+    .main {
+        width: 20%;
+        margin-left: 4vw;
+    }
+    .two figure:first-child img{
+        width: 30vw;
+        height: 40vh;
+    }
+    .two figure:first-child {
+        left: 15vw;
+    }
+    .two aside {
+        width: 45vw;
+    }
+    .two aside img {
+        width: 20vw;
+        height: 35vh;
+    }
+    .four aside img {
+        width: 20vw;
+        height: 35vh;
+    }
+    .four aside {
+        width: 40vw;
+    }
+    .four figure {
+        right: 17vw;
+    }
+    .four figure img {
+        height: 50vh;
+    }
+    .six figure {
+        width: 40vw;
+        height: 80vh;
+    }
+    .six figure img:first-child{
+        width: 25vw;
+        height: 35vh;
+    }
+    .six figure img:last-child{
+        margin-left: 5vw;
+        width: 30vw;
+        height: 50vh;
+    }
+    .seven {
+        justify-self: center;
+    }
+    .seven figure img {
+        width: 40vw;
+    }
+    .seven aside {
+        width: 40vw;
+    }
+    iframe {
+        width: 80vw;
+        height: 80vh;
+    }
+}
+@media (min-width: 769px) {
+    .head ul:last-child li{
+        display:flex;
+        flex-grow: 1;
+        justify-content: flex-end;
+    }
+    .head ul {
+        margin: 0 5vw;
+    }
+    .head ul:first-child li {
+        margin: 1vw;
+    }
+    .main {
+        width: 20%;
+        margin-left: 3vw;
+    }
+    .two {
+        justify-items: center;
+    }
+    .four {
+        justify-items: center;
+    }
+    .four figure {
+        right: 12vw;
+    }
+    .footart {
+        justify-content: space-around;
+    }
+    .footart article {
+        width: 25vw;
+        margin-bottom: 5vh;
+    }
+    .footer {
+        margin: 0;
+        font-size: 15px;
+        justify-content: space-between;
+    }
+    .footer ul:first-child{
+        width: 75vw;
+    }
+    .footer ul:last-child{
+        width: 20vw;
+        justify-content: end;
+    }
+    .foothead {
+        margin-left: 3.5vw;
+        margin-bottom: 3vh;
+    }
+}
+@media (max-width: 768px){
+    .part article {
+        width: 80%;
+        justify-self: center;
+    }
+    .two aside {
+        height: 50vh;
+    }
+    .four {
+        justify-items: center;
+    }
+    .four aside {
+        width: 50vw;
+        height: 70vh;
+    }
+    .four aside img{
+        width: 30vw;
+        height: 70vh;
+    }
+    .four figure img{
+        width: 40vw;
+        height: 30vh;
+    }
+    .six figure img:last-child{
+        margin-left: 3vw;
+        width: 40vw;
+        height: 40vh;
+    }
+    .footart {
+        justify-content: space-around;
+    }
+    .footart article {
+        width: 35vw;
+        margin-bottom: 5vh;
+    }
+    .footer {
+        margin: 0;
+        font-size: 10px;
+        justify-content: space-between;
+    }
+    .footer ul:first-child{
+        width: 75vw;
+    }
+    .footer ul:last-child{
+        width: 20vw;
+        justify-content: end;
+    }
+    .foothead {
+        margin-left: 6.5vw;
+        margin-bottom: 3vh;
+    }
+    video {
+        width: 80vw;
+        height: 50vh;
+    }
+}
+
+
